@@ -1,0 +1,236 @@
+:root {
+    --bg: #f4f7fb;
+    --panel: #ffffff;
+    --primary: #1d4ed8;
+    --primary-dark: #163ea8;
+    --accent: #e0ecff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #dfe7f5;
+    --success: #2ea86f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 20px rgba(29, 78, 216, 0.2);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header img {
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    padding: 0.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+header h2 {
+    width: 100%;
+    margin: 0.5rem 0 0;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    text-align: center;
+}
+
+section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+
+#links ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+#links li {
+    margin: 0.5rem 0;
+}
+
+#links a,
+#links a:visited {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#tableau table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#tableau th,
+#tableau td {
+    border: 1px solid var(--border);
+    padding: 0.9rem 1rem;
+    text-align: center;
+}
+
+#tableau thead th {
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+}
+
+#tableau .ch {
+    background: #edf4ff;
+}
+
+#tableau .nch {
+    background: #f8fafc;
+}
+
+#formulaire form {
+    display: grid;
+    gap: 0.15rem;
+    line-height: 1.15;
+}
+
+#formulaire label {
+    display: block;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0;
+    line-height: 1.15;
+}
+
+#formulaire input[type="text"],
+#formulaire input[type="number"],
+#formulaire input[type="email"],
+#formulaire input[type="date"],
+#formulaire textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0.08rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fbfdff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#formulaire form > label,
+#formulaire form > p,
+#formulaire form > br {
+    margin: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--primary);
+}
+
+#formulaire form section {
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+    background: #f8fbff;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+}
+
+#formulaire input[type="submit"] {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(29, 78, 216, 0.25);
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 1.2rem 1rem;
+    }
+
+    section {
+        margin: 1rem 0.8rem;
+        padding: 1.2rem 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
