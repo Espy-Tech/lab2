@@ -85,7 +85,7 @@ section {
 
 section h2 {
     margin-top: 0;
-    color: var(--primary-dark);
+    color: black;
     border-bottom: 2px solid var(--accent);
     padding-bottom: 0.5rem;
 }
@@ -153,8 +153,10 @@ section h2 {
 
 #formulaire input[type="text"],
 #formulaire input[type="number"],
+#formulaire input[type="tel"],
 #formulaire input[type="email"],
 #formulaire input[type="date"],
+#formulaire select,
 #formulaire textarea {
     width: 100%;
     max-width: 500px;
@@ -167,9 +169,9 @@ section h2 {
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-#formulaire form > label,
-#formulaire form > p,
-#formulaire form > br {
+#formulaire form>label,
+#formulaire form>p,
+#formulaire form>br {
     margin: 0;
 }
 
