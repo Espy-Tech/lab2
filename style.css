@@ -44,6 +44,13 @@ header {
     gap: 1rem;
 }
 
+#google-link img{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid rgba(84, 127, 117, 0.334);
+    border-radius: 10px;
+}
 h2 {
     text-align: center;
     font-family: "Isometra", serif;
