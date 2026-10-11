@@ -31,9 +31,10 @@
             <ul>
                 <li><a href="http://kubsu.ru">Гиперссылку на главную страницу сайта kubsu.ru</a></li>
                 <li><a href="https://kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
-                <li><a  id="google-link" href="https://google.com">
-                        <img src="image.jpg" alt="Изображение" width="200" height="150" >
-                    </a></li>
+                <li><a id="google-link" href="https://google.com">
+                        <img src="image.jpg" alt="Изображение" width="200" height="150">
+                    </a>
+                </li>
                 <li><a href="about/about.html">Окращенную с сылку на внутреннюю страницу</a> </li>
                 <li><a href="/">Сокращенную ссылку на главную страницу;</a></li>
                 <li><a href="index.html#formulaire">Ссылку на фрагмент текущей страницы;</a></li>
@@ -46,7 +47,18 @@
                 <li><a href="../../index.html">Относительную на страницу в каталоге двумя уровнями выше</a></li>
                 <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML">Контекстную в тексте абзаца</a></li>
                 <li><a href="https://kubsu.ru/#section">Ссылку на фрагмент страницы стороннего сайта;</a></li>
-                <li><a href="carte.png">Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</a></li>
+                <li>Ссылки из прямоугольной и круглой областей картинки (HTML-тег map):
+                    <br>
+                    <img src="carte.png" alt="Здание Кубанского государственного университета" usemap="#campus-map"
+                        width="200" height="150">
+                    <map name="campus-map">
+                        <area shape="rect" coords="0,96,1280,160" href="https://kubsu.ru"
+                            alt="Сайт Кубанского государственного университета" title="Сайт КубГУ">
+                        <area shape="circle" coords="1060,700,95"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Кубанский+государственный+университет"
+                            alt="Кубанский государственный университет на карте" title="КубГУ на карте">
+                    </map>
+                </li>
                 <li><a href="">Ссылку с пустым href</a></li>
                 <li><a>Ссылку без href</a></li>
                 <li><a href="https://kubsu.ru" rel="nofollow">Ссылку, по которой запрещен переход поисковикам</a></li>
