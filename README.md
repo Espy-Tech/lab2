@@ -1,5 +1,4 @@
 # Lab2 — Interface Web
-https://drive.google.com/file/d/132P3zueVXmARi7opnFqUejB11sELxyME/view?usp=drivesdk
 
 Deuxième exercice du cours « Développement d'interfaces Web ». Le projet est un site statique réalisé en HTML et CSS.
 
